@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <ul class="topnav wrapper">
+                <a href="#"><img src="src/images/header/logo.png" alt="Logo" class="logo"></a>
+                <div class="right">
+                    <a href="#" class="nav-link">Coca Cola Corporate Site</a>
+                    <a href="#" class="nav-link">Bahasa</a>
+                </div>
+            </ul>
+            <ul class="bottomnav wrapper">
+                <li class="dropdown">
+                    <button>SUSTAINABILITY <i class="fas fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button>OUR COMPANY <i class="fas fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button>MEDIA CENTER <i class="fas fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">CONTACT US</a>
+                </li>
+                <li class="dropdown">
+                    <button class="btn search"><i class="fas fa-search"></i></button>
+                </li>
+            </ul>
+        </nav>
+        <div class="banner-area wrapper">
+            <h1 class="title">JAKARTA ACTIVE PARK</h1>
+            <h2 class="subtitle">15 June 2017 @Kembang Sepatu Park</h2>
+            <div class="button-nav">
+                <a href="#" class="link-more">View More<i class="fas fa-arrow-right"></i></a>
+                <div class="right-button-nav">
+                    <button class="arrow" onclick="incrementIndex(-1)"><i class="fas fa-arrow-left"></i></button>
+                    <button class="arrow" onclick="incrementIndex(1)"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="slide-timeline">
+                <button class="dot" onclick="setCurrentIndex(0)"><span class="inner-dot"></span></button>
+                <button class="dot" onclick="setCurrentIndex(1)"><span class="inner-dot"></span></button>
+                <button class="dot" onclick="setCurrentIndex(2)"><span class="inner-dot"></span></button>
+            </div>
+        </div>
+        <div class="card-container wrapper">
+            <div class="card me">
+                <div class="tooltip">
+                    <div class="content">
+                        <div class="img">
+                            <img src="./src/images/header/water.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="title">Water Stewardship</h3>
+                            <p class="desc">Replenish 100% of water used in our finished product</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img">
+                            <img src="./src/images/header/earth.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="title">Climate Protection</h3>
+                            <p class="desc">Reduce the carbon footprint of drint in your hand by 25%</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img">
+                            <img src="./src/images/header/plant.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="title">Sutainable Agriculture</h3>
+                            <p class="desc">Sutainable source key agriculture ingredients</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img">
+                            <img src="./src/images/header/soda.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="title">Packaging</h3>
+                            <p class="desc">Reach a 75% recovery rate for the number of bottle and cans</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="title">Me</h2>
+                    <p class="desc">Enhanching Personal Well-Being</p>
+                </div>
+                <a href="#" class="card-link"><i>+</i></a>
+            </div>
+            <div class="card we">
+                <div class="content">
+                    <h2 class="title">We</h2>
+                    <p class="desc">Building Stronger Communitity</p>
+                </div>
+                <a href="#" class="card-link"><i>+</i></a>
+            </div>
+            <div class="card world">
+                <div class="content">
+                    <h2 class="title">World</h2>
+                    <p class="desc">Protecting The Environment</p>
+                </div>
+                <a href="#" class="card-link"><i>+</i></a>
+            </div>
+        </div>
+    </header>
+    <main class="main wrapper">
+        <section class="about">
+            <!-- Me Row -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="me title">Me</h2>
+                    <p class="subtitle">Our Initiatives to Enhance Personal Well-Being</p>
+                    <a href="#" class="about-link">see all <i class="fas fa-arrow-right me"></i></a>                 
+                </div>
+                <div class="col">
+                    <img src="./src/images/me/perpuseru.png" alt="Perpuseru" class="illustration">
+                    <h3 class="img-title">Perpuseru</h3>
+                    <p class="img-desc">Empowering human resource through knowledge</p>
+                    <a href="#" class="link-more me">learn more <i class="fas fa-arrow-right me"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/me/street education.png" alt="Street Education" class="illustration">
+                    <h3 class="img-title">Street Education</h3>
+                    <p class="img-desc">Empowering human resource through knowledge</p>
+                    <a href="#" class="link-more me">learn more <i class="fas fa-arrow-right me"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/me/rumah pendidikan.png" alt="Rumah Pendidikan" class="illustration">
+                    <h3 class="img-title">Rumah Pendidikan</h3>
+                    <p class="img-desc">Empowering human resource through knowledge</p>
+                    <a href="#" class="link-more me">learn more <i class="fas fa-arrow-right me"></i></a>
+                </div>
+            </div>
+            
+            <!-- We Row -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="we title">We</h2>
+                    <p class="subtitle">Our Initiatives to Build Stronger Community</p>
+                    <a href="#" class="about-link">see all <i class="fas fa-arrow-right we"></i></a>                    
+                </div>
+                <div class="col">
+                    <img src="./src/images/we/jakarta.png" alt="Jakarta Active Park" class="illustration">
+                    <h3 class="img-title">Jakarta Active Park</h3>
+                    <p class="img-desc">Healthy active living is a cool way of lifestyle for everybody</p>
+                    <a href="#" class="link-more we">learn more <i class="fas fa-arrow-right we"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/we/surabaya.png" alt="Surabaya Active Park" class="illustration">
+                    <h3 class="img-title">Surabaya Active Park</h3>
+                    <p class="img-desc">Healthy active living is a cool way of lifestyle for everybody</p>
+                    <a href="#" class="link-more we">learn more <i class="fas fa-arrow-right we"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/we/medan.png" alt="Medan Active Park" class="illustration">
+                    <h3 class="img-title">Medan Active Park</h3>
+                    <p class="img-desc">Healthy active living is a cool way of lifestyle for everybody</p>
+                    <a href="#" class="link-more we">learn more <i class="fas fa-arrow-right we"></i></a>
+                </div>     
+            </div>
+
+            <!-- World Row -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="world title">World</h2>
+                    <p class="subtitle">Our Initiatives to Protect the Environment</p>
+                    <a href="#" class="about-link">see all <i class="fas fa-arrow-right world"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/world/lumbung air.png" alt="Lumbung Air" class="illustration">
+                    <h3 class="img-title">Lumbung Air</h3>
+                    <p class="img-desc">Empowering human resource through knowledge</p>
+                    <a href="#" class="link-more world">learn more <i class="fas fa-arrow-right world"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/world/bersih.png" alt="BERSIH Movement" class="illustration">
+                    <h3 class="img-title">BERSIH Movement</h3>
+                    <p class="img-desc">Empowering human resource through knowledge</p>
+                    <a href="#" class="link-more world">learn more <i class="fas fa-arrow-right world"></i></a>
+                </div>
+                <div class="col">
+                    <img src="./src/images/world/bali beach.png" alt="Bali Beach" class="illustration">
+                    <h3 class="img-title">Bali Beach Clean Up</h3>
+                    <p class="img-desc">Empowering human resource through knowledge</p>
+                    <a href="#" class="link-more world">learn more <i class="fas fa-arrow-right world"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="ideas">
+            <h2 class="title">Initiative Idea From You</h2>
+            <div class="row">
+                <div class="col">
+                    <img src="./src/images/intiative idea/sponsor this community library.png" alt="Library">
+                    <div class="container">
+                        <h3 class="subtitle">Sponsor This Community Libray</h3>
+                        <div class="count">
+                            <div class="supporter">
+                                <p class="number"><span class="big-number">23</span>/200</p>
+                                <p class="desc">Supporter</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="days-left">
+                                <p class="big-number">59</p>
+                                <p class="desc">Days left</p>
+                            </div>
+                        </div>
+                        <div class="progress-outer">
+                            <div class="progress-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./src/images/intiative idea/add recycle.png" alt="Recycling">
+                    <div class="container">
+                        <h3 class="subtitle">Add Recycle Instruction in Bottle and Canes</h3>
+                        <div class="count">
+                            <div class="supporter">
+                                <p class="number"><span class="big-number">543</span>/200</p>
+                                <p class="desc">Supporter</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="days-left">
+                                <p class="big-number">23</p>
+                                <p class="desc">Days left</p>
+                            </div>
+                        </div>
+                        <div class="progress-outer">
+                            <div class="progress-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./src/images/intiative idea/sponsor this community library right.png" alt="Community">
+                    <div class="container">
+                        <h3 class="subtitle">Sponsor This Community Libray</h3>
+                        <div class="count">
+                            <div class="supporter">
+                                <p class="number"><span class="big-number">23</span>/200</p>
+                                <p class="desc">Supporter</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="days-left">
+                                <p class="big-number">59</p>
+                                <p class="desc">Days left</p>
+                            </div>
+                        </div>
+                        <div class="progress-outer">
+                            <div class="progress-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="link-more">see more ideas <i class="fas fa-arrow-right me"></i></a>
+        </section>
+        <section class="partner">
+            <h2 class="title">Our Partner</h2>
+            <div class="row">
+                <div class="col">
+                    <img src="./src/images/partner/row1/logo 1.png" alt="USAID">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row1/logo 2.png" alt="NIKE">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row1/logo 3.png" alt="Bill & Melinda Gates Foundation">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row1/logo 4.png" alt="Telkom Indonesia">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row1/logo 5.png" alt="Mahaka Group">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row2/logo 1.png" alt="Google">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row2/logo 2.png" alt="Toyota">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row2/logo 3.png" alt="Apple">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row2/logo 4.png" alt="Fox">
+                </div>
+                <div class="col">
+                    <img src="./src/images/partner/row2/logo 5.png" alt="Vans">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer wrapper">
+        <div class="left-footer">
+            <img class="logo" src="./src/images/footer/logo.png" alt="Logo">
+            <p class="logo-text">Coca Cola Indonesia &copy; 2017 All right reserved</p>
+        </div>
+        <div class="center-footer">
+            <div class="footer-link">
+                <div class="main-link">
+                    <a class="link" href="#">Sustainability</a>
+                    <a class="link" href="#">Our Company</a>
+                    <a class="link" href="#">Media Center</a>
+                    <a class="link" href="#">Contact Us</a>
+                </div>
+                <div class="secondary-link">
+                    <a class="link" href="#">Privacy Policy</a>
+                    <a class="link" href="#">Term of Use</a>
+                    <a class="link" href="#">Disclaimer</a>
+                </div>
+            </div>
+            <div class="social">
+                <p class="social-header">Follow Us</p>
+                <div class="links-container">
+                    <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="right-footer">
+            <p>Subscribe Newsletter</p>
+            <p class="subscribe">Subscribe to our newsletter to say on top of news and events from Coca Cola Indonesia</p>
+            <form class="email">
+                <input id="input" class="input" type="email" placeholder="Enter your email address">
+                <button id="submit" class="submit"><i class="far fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </footer>
+
+	<script>
+
+		var slideIndex = -1;
+	  	const imageURL = ["src/images/header/banner-skateboard.png", "src/images/header/banner-olympic.png", "src/images/header/banner-jogging.png"];
+          
+        window.addEventListener('DOMContentLoaded', (event) => {
+            autoPlaySlide();
+        });
+
+	  	function incrementIndex(n) {
+	  		if(slideIndex < 0){slideIndex = 0};
+	   		changeSlide(slideIndex += n);
+	  	}
+
+	  	function setCurrentIndex(n) {
+	  		if(slideIndex < 0){slideIndex = 0};
+            changeSlide(slideIndex = n);
+	  	}
+
+	  	function changeSlide(n) {
+	    	const header = document.getElementById("header");
+  			const dots = document.getElementsByClassName("dot");
+
+	    	if (n > imageURL.length - 1) {slideIndex = 0}    
+		  	if (n < 0) {slideIndex = imageURL.length - 1}
+	    	for(let i = 0; i < dots.length; i++){
+				dots[i].style.border = "0";
+			}
+
+	    	header.style.backgroundImage = `url("${imageURL[slideIndex]}")`;
+	    	dots[slideIndex].style.border = "1px solid #fff";
+	  	}
+
+        function autoPlaySlide(){
+            incrementIndex(1);
+	    	setTimeout(autoPlaySlide, 2500);
+
+        }
+
+        const submit = document.getElementById('submit');
+
+        submit.addEventListener("click", function(event){
+            const input = document.getElementById("input");
+            event.preventDefault();
+            alert(input.value)
+        })
+
+	</script>
+
+</body>
+</html>
