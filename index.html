@@ -15,39 +15,47 @@
 <body>
     <header class="header" id="header">
         <nav class="nav">
+            <div class="logo">
+                <a href="#"><img src="src/images/header/logo.png" alt="Logo" class="logo-img"></a> 
+            </div>
             <ul class="topnav wrapper">
-                <a href="#"><img src="src/images/header/logo.png" alt="Logo" class="logo"></a>
                 <div class="right">
                     <a href="#" class="nav-link">Coca Cola Corporate Site</a>
                     <a href="#" class="nav-link">Bahasa</a>
                 </div>
             </ul>
-            <ul class="bottomnav wrapper">
-                <li class="dropdown">
-                    <button>SUSTAINABILITY <i class="fas fa-angle-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">Link</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <button>OUR COMPANY <i class="fas fa-angle-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">Link</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <button>MEDIA CENTER <i class="fas fa-angle-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">Link</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#">CONTACT US</a>
-                </li>
-                <li class="dropdown">
-                    <button class="btn search"><i class="fas fa-search"></i></button>
-                </li>
-            </ul>
+            <div class="bottomnav wrapper">
+                <ul class="main-nav" id="nav-menu">
+                    <li class="dropdown">
+                        <button>SUSTAINABILITY <i class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="menu-btn" href="#">Link</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <button>OUR COMPANY <i class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="menu-btn" href="#">Link</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <button>MEDIA CENTER <i class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                            <a class="menu-btn" href="#">Link</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">CONTACT US</a>
+                    </li>
+                    <li class="dropdown">
+                        <button class="btn search"><i class="fas fa-search"></i></button>
+                    </li>
+                </ul>
+                <div class="menu-btn burger-nav" id="menu-btn">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </div>
+
+            </div>
         </nav>
         <div class="banner-area wrapper">
             <h1 class="title">JAKARTA ACTIVE PARK</h1>
@@ -286,7 +294,7 @@
                     <img src="./src/images/partner/row1/logo 2.png" alt="NIKE">
                 </div>
                 <div class="col">
-                    <img src="./src/images/partner/row1/logo 3.png" alt="Bill & Melinda Gates Foundation">
+                    <img class="symetric" src="./src/images/partner/row1/logo 3.png" alt="Bill & Melinda Gates Foundation">
                 </div>
                 <div class="col">
                     <img src="./src/images/partner/row1/logo 4.png" alt="Telkom Indonesia">
@@ -298,10 +306,10 @@
                     <img src="./src/images/partner/row2/logo 1.png" alt="Google">
                 </div>
                 <div class="col">
-                    <img src="./src/images/partner/row2/logo 2.png" alt="Toyota">
+                    <img class="symetric" src="./src/images/partner/row2/logo 2.png" alt="Toyota">
                 </div>
                 <div class="col">
-                    <img src="./src/images/partner/row2/logo 3.png" alt="Apple">
+                    <img class="symetric" src="./src/images/partner/row2/logo 3.png" alt="Apple">
                 </div>
                 <div class="col">
                     <img src="./src/images/partner/row2/logo 4.png" alt="Fox">
@@ -313,47 +321,48 @@
         </section>
     </main>
     <footer class="footer wrapper">
-        <div class="left-footer">
-            <img class="logo" src="./src/images/footer/logo.png" alt="Logo">
-            <p class="logo-text">Coca Cola Indonesia &copy; 2017 All right reserved</p>
-        </div>
-        <div class="center-footer">
-            <div class="footer-link">
-                <div class="main-link">
-                    <a class="link" href="#">Sustainability</a>
-                    <a class="link" href="#">Our Company</a>
-                    <a class="link" href="#">Media Center</a>
-                    <a class="link" href="#">Contact Us</a>
+        <div class="row">
+            <div class="left-footer col">
+                <img class="logo" src="./src/images/footer/logo.png" alt="Logo">
+                <p class="logo-text">Coca Cola Indonesia &copy; 2017 All right reserved</p>
+            </div>
+            <div class="center-footer col">
+                <div class="footer-link">
+                    <div class="main-link">
+                        <a class="link" href="#">Sustainability</a>
+                        <a class="link" href="#">Our Company</a>
+                        <a class="link" href="#">Media Center</a>
+                        <a class="link" href="#">Contact Us</a>
+                    </div>
+                    <div class="secondary-link">
+                        <a class="link" href="#">Privacy Policy</a>
+                        <a class="link" href="#">Term of Use</a>
+                        <a class="link" href="#">Disclaimer</a>
+                    </div>
                 </div>
-                <div class="secondary-link">
-                    <a class="link" href="#">Privacy Policy</a>
-                    <a class="link" href="#">Term of Use</a>
-                    <a class="link" href="#">Disclaimer</a>
+                <div class="social">
+                    <p class="social-header">Follow Us</p>
+                    <div class="links-container">
+                        <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="social">
-                <p class="social-header">Follow Us</p>
-                <div class="links-container">
-                    <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="social-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a class="social-link" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+            <div class="right-footer col">
+                <p>Subscribe Newsletter</p>
+                <p class="subscribe">Subscribe to our newsletter to say on top of news and events from Coca Cola Indonesia</p>
+                <form class="email">
+                    <input id="input" class="input" type="email" placeholder="Enter your email address">
+                    <button id="submit" class="submit"><i class="far fa-paper-plane"></i></button>
+                </form>
             </div>
-        </div>
-        <div class="right-footer">
-            <p>Subscribe Newsletter</p>
-            <p class="subscribe">Subscribe to our newsletter to say on top of news and events from Coca Cola Indonesia</p>
-            <form class="email">
-                <input id="input" class="input" type="email" placeholder="Enter your email address">
-                <button id="submit" class="submit"><i class="far fa-paper-plane"></i></button>
-            </form>
         </div>
     </footer>
 
 	<script>
-
 		var slideIndex = -1;
 	  	const imageURL = ["src/images/header/banner-skateboard.png", "src/images/header/banner-olympic.png", "src/images/header/banner-jogging.png"];
           
@@ -390,14 +399,27 @@
 	    	setTimeout(autoPlaySlide, 2500);
 
         }
+        
+        const menuButton = document.getElementsByClassName("menu-btn");
+        for(let i=0; i < menuButton.length; i++){
+            menuButton[i].onclick = () => showNav();
+        }
+
+		// show nav onclick
+        function showNav() {
+            var menuIcon = document.getElementById("menu-icon");
+            var navMenu = document.getElementById("nav-menu");
+            menuIcon.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
 
         const submit = document.getElementById('submit');
-
         submit.addEventListener("click", function(event){
             const input = document.getElementById("input");
             event.preventDefault();
             alert(input.value)
         })
+
 
 	</script>
 
